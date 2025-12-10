@@ -1,0 +1,65 @@
+body {
+  /* Base background */
+  --bg-dark: oklch(70.64% 0.0817 255.182);
+  --bg: oklch(77.71% 0.0817 255.182); /* fallback = L * 1.5 */
+  --surface: oklch(79.12% 0.0408 255.182); /* fallback = L * 1.15, C * 0.5 */
+
+  /* Borders */
+  --border: oklch(91.83% 0.1634 255.182); /* L * 4, C * 2 */
+
+  /* Text (placeholders) */
+  --text-on-bg-dark: oklch(10.00% 0.0000 0.000);
+  --text-muted-on-bg-dark: oklch(35.00% 0.0000 0.000);
+
+  --text-on-bg: oklch(10.00% 0.0000 0.000);
+  --text-muted-on-bg: oklch(35.00% 0.0000 0.000);
+
+  --text-on-surface: oklch(10.00% 0.0000 0.000);
+  --text-muted-on-accent: oklch(75.00% 0.0000 0.000);
+
+  /* Accent */
+  --accent: oklch(56.51% 0.1225 285.182); /* L * 0.8, C * 1.5, h+30 */
+  --accent-muted: oklch(63.58% 0.0817 285.182); /* L * 0.9 */
+
+  --text-on-accent: oklch(95.00% 0.0000 0.000);
+  --text-muted-on-accent: oklch(75% 0 0);
+  --text-on-accent-muted: oklch(95.00% 0.0000 0.000);
+  --text-muted-on-accent-muted: oklch(75.00% 0.0000 0.000);
+
+  /* Semantic states */
+  --success: oklch(70.00% 0.1500 150.000);
+  --warning: oklch(85.00% 0.1500 90.000);
+  --error: oklch(60.00% 0.2000 30.000);
+
+  --text-on-success: oklch(95.00% 0.0000 0.000);
+  --text-muted-on-success: oklch(75.00% 0.0000 0.000);
+
+  --text-on-warning: oklch(10.00% 0.0000 0.000);
+  --text-muted-on-warning: oklch(35.00% 0.0000 0.000);
+
+  --text-on-error: oklch(95.00% 0.0000 0.000);
+  --text-muted-on-error: oklch(75.00% 0.0000 0.000);
+}
+
+
+  
+label[for="base-color-input"]{
+  background: var(--bg);
+  padding: 0.7em 1em;
+  border-radius: 0.5em;
+  color: var(--text-on-bg);
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  transition: all 0.15s linear;
+}
+
+#base-color-input{
+  width: 2.5em;
+  height: 2em;
+  background: none;
+  border: none;
+}

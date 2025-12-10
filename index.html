@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quick Notes</title>
+    <link rel="stylesheet" href="theme/components/reset.css" />
+    <link rel="stylesheet" href="theme/components/theme.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Quick Notes</h1>
+      <div>
+        <div>
+          <button class="add-note-btn">
+            Notes : 
+            <span class="notes_count">
+              
+            </span>
+          </button>
+          <button class="add-note-btn js-add-note" title="ctrl + k">
+            + Add Note
+          </button>
+        </div>
+        <label for="base-color-input">
+          Background
+          <input type="color" id="base-color-input" />
+        </label>
+      </div>
+    </header>
+
+    <main id="notesContainer" class="notes-grid"></main>
+
+    <dialog id="noteDialog">
+      <div class="dialog-content">
+        <div class="dialog-header">
+          <h2 class="dialog-title" id="dialogTitle">Add New Note</h2>
+          <button class="close-btn js-close-btn">
+            <div class="delete-btn">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 -960 960 960"
+                width="24px"
+                class="delete-icon"
+              >
+                <path
+                  d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+                />
+              </svg>
+            </div>
+          </button>
+        </div>
+
+        <form id="noteForm">
+          <div class="form-group">
+            <label for="noteTitle" class="form-label">Title</label>
+            <input
+              type="text"
+              id="noteTitle"
+              class="form-input"
+              placeholder="Enter note title..."
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="noteContent" class="form-label">Content</label>
+            <textarea
+              id="noteContent"
+              class="form-textarea"
+              placeholder="Write your note here..."
+              required
+            ></textarea>
+          </div>
+
+          <div class="dialog-actions">
+            <button type="button" class="cancel-btn js-close-btn">
+              Cancel
+            </button>
+            <button type="submit" class="save-btn js-save-btn">
+              Save Note
+            </button>
+          </div>
+        </form>
+      </div>
+    </dialog>
+    <script src="theme/theme.js"></script>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>

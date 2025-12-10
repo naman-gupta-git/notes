@@ -1,0 +1,34 @@
+<label for="base-color-input">
+  Background
+  <input type="color" id="base-color-input">
+</label>
+
+
+<script src="theme/theme.js" defer></script>
+
+----------------------------------colors----------------------------------
+--bg-dark
+--bg
+--surface
+--border
+--text-on-bg-dark
+--text-muted-on-bg-dark
+--text-on-bg
+--text-muted-on-bg
+--text-on-surface
+--text-muted-on-surface
+--accent
+--accent-muted
+--text-on-accent
+--text-muted-on-accent
+--text-on-accent-muted
+--text-muted-on-accent-muted
+--success
+--warning
+--error
+--text-on-success
+--text-muted-on-success
+--text-on-warning
+--text-muted-on-warning
+--text-on-error
+--text-muted-on-error
